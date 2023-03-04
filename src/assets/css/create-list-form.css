@@ -1,0 +1,331 @@
+.create-list {
+	position: relative;
+	background-image: url("../Frontend/img_background@3x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
+.create-list .back-btn img {
+	width: 20px;
+}
+
+.create-list-content {
+	padding-bottom: 18px;
+}
+
+.create-list .container .create-list-content .back-btn {
+	padding-top: 35px;
+	display: flex;
+	justify-content: unset;
+}
+
+.create-list-content .back-btn > p {
+	font-weight: bold;
+	font-size: 15px;
+}
+.back-btn > .mobile-title {
+	display: none;
+}
+.create-list h1 {
+	display: block;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.create-list-content .back-btn a {
+	width: 40px;
+}
+
+.create-list__form form label {
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	color: var(--secondary-text-color);
+}
+.create-list__form form > label::after {
+	content: "*";
+}
+
+.create-list__form form input {
+	padding: 20px 300px 20px 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	color: #939393;
+}
+.create-list__form form span {
+	font-size: 14px;
+}
+.create-list__form form input::placeholder {
+	font-size: var(--input-field-title);
+	color: var(--tertiary-color2);
+}
+
+.create-list__form .flex-input {
+	display: flex;
+}
+
+.create-list__form .flex-input-left input,
+.create-list__form .flex-input-left label {
+	margin-left: 40px;
+}
+.flex-input-right label::after {
+	content: "*";
+}
+
+.create-list__form .flex-input-right > input,
+.create-list__form .flex-input-left > input {
+	padding: 20px 30px 20px 15px;
+}
+
+.create-list__form .flex-input-left span {
+	margin-left: 45px;
+	font-size: 14px;
+}
+
+.create-list__upload {
+	padding-top: 20px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.create-list__upload .create-list__upload-img {
+	position: relative;
+	margin-top: 5px;
+	padding: 70px 50px 70px 100px;
+	border: 1px dashed var(--tertiary-color2);
+	display: inline-block;
+	cursor: pointer;
+}
+.create-list__upload-img input[type="file"] {
+	display: none;
+}
+
+.create-list__upload label > img {
+	width: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.create-list__upload .upload-img {
+	width: 100%;
+	max-height: 140px;
+	z-index: 111;
+}
+
+.create-list__form-select {
+	display: flex;
+}
+
+.select-garage {
+	position: relative;
+	margin-left: 50px;
+	bottom: 20px;
+	margin-top: 36px;
+}
+
+.select-garage label:first-child {
+	padding-top: 20px;
+}
+
+.select-garage::after {
+	content: "< >";
+	font-size: 18px;
+	color: var(--tertiary-color2);
+	transform: rotate(90deg);
+	position: absolute;
+	right: 7px;
+	bottom: 50px;
+}
+.select-garage select > option {
+	color: red;
+}
+
+.select-garage select {
+	padding-left: 20px;
+	appearance: none;
+	border-radius: 10px;
+	width: 210px;
+	height: 50px;
+	font-size: 15px;
+	border-radius: 5px;
+	outline: none;
+	border-color: transparent;
+	color: var(--tertiary-color2);
+}
+
+.select-garage label::after {
+	content: "*";
+}
+
+.create-list__form form > input:last-of-type {
+	padding: 20px 300px 150px 50px;
+}
+
+.create-list__form .create-list__form-btn > button {
+	margin-top: 40px;
+	margin-left: 275px;
+	text-transform: uppercase;
+	padding: 20px 100px 20px 100px;
+	color: white;
+	border: none;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+}
+
+.create-list__form .create-list__form-btn > button.disabled {
+	opacity: 0.5;
+	cursor: no-drop;
+	pointer-events: none;
+}
+
+.create-list__form .error {
+	display: block;
+	color: var(--primary-color);
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.error-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+	.create-list {
+		padding-left: 10px;
+		width: 100%;
+		padding-bottom: var(--section-padding);
+	}
+
+	.create-list .container {
+		max-width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.create-list .container .create-list-content .back-btn > p:first-child {
+		display: none;
+	}
+	.create-list .back-btn {
+		padding: 0px;
+		margin-left: 10px;
+	}
+
+	.create-list .back-btn img {
+		display: block;
+		width: 17px;
+	}
+
+	.create-list-content .back-btn > p:first-child {
+		display: none;
+	}
+
+	.create-list h1 {
+		display: none;
+	}
+
+	.create-list__form {
+		display: block;
+	}
+
+	.create-list__form form label {
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 5px;
+		color: var(--secondary-text-color);
+		font-size: var(--input-filed-title-mobile);
+	}
+
+	.create-list__form form input {
+		padding: 14px 110px 14px 20px;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		color: #939393;
+	}
+
+	.create-list__form form input::placeholder {
+		font-size: var(--input-filed-title-mobile);
+	}
+
+	.create-list__form .flex-input-left input,
+	.create-list__form .flex-input-left label {
+		margin-left: 8px;
+	}
+	.create-list__form .flex-input-right > input,
+	.create-list__form .flex-input-left > input {
+		padding: 14px 0px 14px 10px;
+		font-size: var(--input-filed-title-mobile);
+	}
+	.create-list__form .flex-input-left > input {
+		width: 90%;
+	}
+	.create-list__form form > input:last-of-type {
+		padding: 20px 135px 110px 5px;
+	}
+
+	.flex-input-right > label,
+	.flex-input-left > label {
+		font-size: 12px;
+	}
+
+	.flex-input-left {
+		margin-left: 7px;
+	}
+
+	.select-garage {
+		margin-left: 20px;
+		bottom: 13px;
+		font-size: 12px;
+	}
+
+	.select-garage label:first-child {
+		padding-top: 10px;
+	}
+
+	.create-list__form-select .select-garage::after {
+		right: 12px;
+		bottom: 45px;
+		font-size: 12px;
+	}
+
+	.select-garage select {
+		appearance: none;
+		width: 138px;
+		height: 38px;
+		font-size: 12px;
+		padding-left: 10px;
+	}
+	.create-list__form .create-list__form-btn > button {
+		text-align: center;
+		margin-left: unset;
+		align-items: center;
+		text-transform: uppercase;
+		padding: 15px 130px;
+		font-size: var(--btn-mobil-font);
+	}
+
+	.create-list-content .back-btn .mobile-title {
+		display: block;
+		margin-left: 40px;
+	}
+
+	.create-list-content .back-btn p {
+		display: none;
+	}
+	.create-list__form .flex-input-left span {
+		font-size: 12px;
+		font-weight: 200;
+		margin-left: 12px;
+	}
+
+	.create-list__form .error {
+		font-size: 12px;
+	}
+}

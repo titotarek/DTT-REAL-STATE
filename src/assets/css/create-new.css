@@ -1,0 +1,52 @@
+.create-content {
+	margin-top: 40px;
+	align-items: center;
+	position: relative;
+}
+
+.create-content h1 {
+	font-size: var(--Header1-font);
+	font-weight: bold;
+}
+
+.create-btn img {
+	position: absolute;
+	filter: brightness(0) invert(1);
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	right: 190px;
+}
+
+.create-btn a p {
+	padding: 12px 56px;
+	color: white;
+	background-color: var(--primary-color);
+	width: fit-content;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-size: var(--btn-font);
+}
+
+@media screen and (max-width: 480px) {
+	.create .container {
+		width: 100%;
+	}
+
+	.container .create-content h1 {
+		font-size: var(--Header1-mobil-font);
+		font-weight: bold;
+		margin: 0 auto;
+	}
+	.create-btn p {
+		display: none;
+	}
+	.create .create-btn a > img {
+		position: relative;
+		left: 0px;
+		top: 13px;
+		filter: brightness(5) invert(5);
+		width: 21px;
+	}
+}
+

@@ -1,0 +1,142 @@
+.our-team {
+	padding-top: 30px;
+}
+
+.our-team-container {
+	display: flex;
+	align-items: center;
+}
+.our-team .our-team-container img {
+	width: 500px;
+	border-radius: 10px;
+	margin-left: 100px;
+}
+.our-team-container .our-team-content > p {
+	width: 600px;
+	line-height: 2;
+	color: var(--secondary-color);
+	margin-top: 30px;
+}
+.our-team-container .our-team-content {
+	position: relative;
+}
+.our-team-container .our-team-content > h1 {
+	font-size: var(--Header1-font);
+	color: #4a4b4c;
+	font-weight: bold;
+}
+
+.our-team-content a {
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.our-team-container .our-team-content > h1::before {
+	content: "";
+	position: absolute;
+	height: 8px;
+	width: 80px;
+	top: -10px;
+	background-color: var(--primary-color);
+}
+
+.special-heading {
+	padding-top: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.special-heading-title {
+	position: relative;
+	color: var(--tertiary-color2);
+	font-size: 100px;
+	align-items: center;
+	font-weight: 800;
+	letter-spacing: -3px;
+	margin: 0;
+	font-size: 80px;
+	padding-right: 50px;
+}
+
+.special-heading-title::before {
+	content: "CLIENTS";
+	position: absolute;
+	top: 80px;
+	left: 36px;
+	font-size: 40px;
+	color: var(--tertiary-color1);
+}
+
+.special-heading > p {
+	font-size: 60px;
+	text-align: center;
+	color: var(--secondary-color);
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.team-image-container {
+	padding-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.team-image-container div > img {
+	max-width: 300px;
+	width: 100%;
+	border-radius: 10px;
+	
+}
+
+.team-image-container .text {
+	text-align: center;
+	margin-right: 90px;
+	padding-top: 20px;
+	font-size: 15px;
+}
+
+.team-image-container .text h3 {
+	padding-top: 20px;
+}
+
+
+.our-team-footer {
+	display: flex;
+	padding-top: 100px;
+	color: #383f4f;
+}
+
+.our-team-footer div > img {
+	width: 500px;
+	border-radius: 10px;
+	margin-left: 100px;
+}
+
+.our-team-footer-content h3 {
+	font-size: 40px;
+	padding-top: var(--section-padding);
+	padding-bottom: 20px;
+}
+
+.our-team-footer-content p {
+	font-size: 16px;
+	line-height: 2;
+}
+
+.our-team-footer-content a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 14px 20px;
+	background-color: var(--primary-color);
+	color: white;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+	.our-team {
+		display: none;
+	}
+}

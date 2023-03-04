@@ -1,0 +1,133 @@
+.search-content h1 {
+	font-size: var(--Header1-font);
+}
+
+.search-bar {
+	padding-top: var(--section-padding);
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-bar-content {
+	display: flex;
+	position: relative;
+}
+
+.search-bar-content input {
+	padding: 20px 300px 20px 50px;
+	background-color: var(--tertiary-color1);
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search-bar-content input::placeholder {
+	color: var(--tertiary-color2);
+	font-size: var(--input-filed-font);
+}
+
+.search-bar-content .search-icon,
+.search-bar-content .clear-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+}
+
+.search-bar-content .search-icon {
+	left: 20px;
+}
+
+.search-bar-content .clear-icon {
+	right: 40px;
+}
+
+.search-bar__btn .price-btn {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.search-bar__btn .size-btn {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.search-bar__btn .price-btn,
+.search-bar__btn .size-btn {
+	font-size: var(--btn-font);
+	padding: 15px 60px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background-color: var(--tertiary-color2);
+}
+
+.search-bar__btn .active {
+	background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+	.search .container {
+		width: 100%;
+	}
+	.search .container .search-bar {
+		display: block;
+	}
+
+	.search .search-bar-content input {
+		padding: 12px 50px;
+		color: var(--tertiary-color2);
+		width: 100%;
+	}
+
+	.search-bar-content input::placeholder {
+		color: var(--tertiary-color2);
+		font-size: var(--input-filed-title-mobile);
+	}
+	.search .search-bar-content .search-icon,
+	.search .search-bar-content .clear-icon {
+		right: 20px;
+		width: 15px;
+	}
+
+	.search .search-bar .search-bar__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 30px 0px;
+		margin-left: 0px;
+	}
+	.search-bar__btn .price-btn,
+	.search-bar__btn .size-btn {
+		width: 100%;
+		padding: 12px 60px;
+		font-size: var(--input-filed-title-mobile);
+	}
+}
+
+.heart {
+	position: relative;
+	height: 20px;
+	width: 20px;
+	background-color: var(--tertiary-color2);
+	transform: rotate(-45deg);
+}
+.heart::before {
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background-color: var(--tertiary-color2);
+	top: -50%;
+	border-radius: 50px;
+}
+
+.heart::after {
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background-color: var(--tertiary-color2);
+	right: -50%;
+	border-radius: 50px;
+}
