@@ -173,7 +173,7 @@ export default {
 	mounted() {
 		this.getSingleHome();
 	},
-	
+
 	methods: {
 		async getSingleHome() {
 			axios.defaults.headers.common[
@@ -185,7 +185,6 @@ export default {
 				);
 
 				this.house = getHouseById.data.find((house) => this.id == house.id);
-
 
 				const filterHouseById = getHouseById.data.filter(
 					(houseByCity) =>

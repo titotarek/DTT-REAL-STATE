@@ -24,8 +24,14 @@
 				</router-link>
 			</div>
 		</div>
+        <!-- mobile-nav-bar   -->
 		<div class="mobile-nav-bar container">
-			<router-link :class="{ active: currentRoute == '/' }" to="/">
+			<router-link
+				:class="{
+					active: currentRoute == '/' || currentRoute.includes('/house'),
+				}"
+				to="/"
+			>
 				<img
 					src="../assets/Frontend/ic_mobile_navigarion_home@3x.png"
 					alt="home"

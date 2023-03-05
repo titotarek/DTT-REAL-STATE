@@ -1,7 +1,7 @@
 <template>
 	<div class="about">
 		<div class="container">
-            <h1>About</h1>
+			<h1>About</h1>
 			<h2>About DTT Real Estate</h2>
 			<div class="about-content">
 				<p>
@@ -13,7 +13,6 @@
 					exercitationem sunt est suscipit blanditiis aperiam corrupti porro?
 					Corrupti inventore quaerat reprehenderit quidem voluptate a nulla sed
 					rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-				
 				</p>
 
 				<p>

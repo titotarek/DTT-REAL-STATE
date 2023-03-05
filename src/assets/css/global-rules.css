@@ -47,6 +47,7 @@ body {
 	background-color: var(--background1);
 	height: 90vh;
 	font-family: Montserrat;
+	margin: 0 auto;
 }
 
 a {

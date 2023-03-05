@@ -87,7 +87,6 @@
 	max-width: 300px;
 	width: 100%;
 	border-radius: 10px;
-	
 }
 
 .team-image-container .text {
@@ -100,7 +99,6 @@
 .team-image-container .text h3 {
 	padding-top: 20px;
 }
-
 
 .our-team-footer {
 	display: flex;

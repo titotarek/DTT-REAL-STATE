@@ -16,10 +16,12 @@ export default {
 </script>
 
 <style>
-/* 
- index.css => is the  main template css File 
-*/
+
+
 @import "./assets/css/global-rules.css";
+/* 
+    global-rules.cc  => reset all element normally in all the browser 
+ */
 @import "./assets/css/overview.css";
 @import "./assets/css/detail-page.css";
 @import "./assets/css/header.css";

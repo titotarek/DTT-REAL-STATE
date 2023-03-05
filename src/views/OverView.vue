@@ -1,7 +1,6 @@
 <template>
 	<div>
-
-		<CreateNew /> 
+		<CreateNew />
 
 		<div class="search">
 			<div class="container">
@@ -26,7 +25,7 @@
 					</div>
 					<div class="search-bar__btn">
 						<button
-							:class="{'active': activeFilter === 'price'}"
+							:class="{ active: activeFilter === 'price' }"
 							@click="() => sortList('price')"
 							class="price-btn"
 						>
@@ -34,7 +33,7 @@
 						</button>
 
 						<button
-							:class="{'active': activeFilter === 'size'}"
+							:class="{ active: activeFilter === 'size' }"
 							@click="() => sortList('size')"
 							class="size-btn"
 						>
@@ -116,18 +115,18 @@
 								>
 									<img src="../assets/Frontend/ic_edit@3x.png" alt="" />
 								</router-link>
-							
+
 								<img src="../assets/Frontend/ic_delete@3x.png" alt="" />
 							</div>
-
 						</router-link>
-                        <div   class="like-house">
-                            <img :class="{selected: house?.liked }" @click="() => toggleLike(index)" src="../assets/Frontend/like.png" alt="">
-                                
-                      
-                   
-                    
-                        </div>
+						<div class="like-house">
+							<img
+								:class="{ selected: house?.liked }"
+								@click="() => toggleLike(index)"
+								src="../assets/Frontend/like.png"
+								alt=""
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -139,7 +138,6 @@
 import axios from "axios";
 import CreateNew from "../components/CreateNew.vue";
 
-
 export default {
 	components: { CreateNew },
 	name: "Overview",
@@ -148,7 +146,7 @@ export default {
 		return {
 			houses: null,
 			searchValue: "",
-			activeFilter: 'price',
+			activeFilter: "price",
 		};
 	},
 
@@ -177,7 +175,7 @@ export default {
 				console.log(error);
 			}
 		},
-            
+
 		filteredCity() {
 			if (this.searchValue.trim().length > 0) {
 				this.houses = this.houses.filter((house) => {
@@ -190,7 +188,7 @@ export default {
 			}
 		},
 		sortList(by) {
-            this.activeFilter = by;
+			this.activeFilter = by;
 			this.houses = this.houses.sort((a, b) => {
 				if (a[by] < b[by]) {
 					return -1;
@@ -200,19 +198,16 @@ export default {
 			});
 		},
 
-        toggleLike(i){
-            const likedHouse = this.houses[i]
-            if(likedHouse?.liked){
-                likedHouse.liked = !likedHouse.liked
-            } else {
-                likedHouse['liked'] = true;
-            }
-            
+		toggleLike(i) {
+			const likedHouse = this.houses[i];
+			if (likedHouse?.liked) {
+				likedHouse.liked = !likedHouse.liked;
+			} else {
+				likedHouse["liked"] = true;
+			}
 
-            this.houses[i] = likedHouse;
-        }
-        
-    }
-	
+			this.houses[i] = likedHouse;
+		},
+	},
 };
 </script>

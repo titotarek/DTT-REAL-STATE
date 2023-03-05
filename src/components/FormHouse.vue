@@ -11,7 +11,6 @@
 					<p class="mobile-title">
 						{{ this.$props.houseId ? "Edit listing" : "Create new listing" }}
 					</p>
-
 				</div>
 			</div>
 			<h1>Create new list</h1>
